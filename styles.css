@@ -1,0 +1,138 @@
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+html {
+    scroll-behavior: smooth;
+    font-size: 100%;
+    box-sizing: border-box;
+}
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background-color: #183140;
+    color: #F6F0ED;
+}
+
+
+/* nav */
+nav {
+    padding: 10px;
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+    @media (min-width: 600px) {
+        padding: 20px;
+    }
+}
+nav a {
+    text-decoration: none;
+    color: #F6F0ED;
+    position: relative;
+}
+nav a::before {
+    content: "";
+    position: absolute;
+    height: 3px;
+    right: 0px;
+    bottom: -3px;
+    left: 0px;
+    background-color: #F34616;
+}
+nav a:hover {
+    transition: color 0.5s ease-out;
+    color: #F34616;
+}
+nav a:hover::before {
+    background: linear-gradient(to right, #F6F0ED 60%, #F34616 75%);
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+ul {
+    display: grid;
+    grid-template-columns: 1fr repeat(3, fit-content(50px));
+    grid-column-gap: 3%;
+    justify-content: center;
+    justify-items: end;
+    max-width: 95%;
+}
+.fullwidth {
+    grid-column: 1 / span 1;
+    justify-self: start;
+    padding-left: 3%;
+}
+@media only screen and (max-width: 600px) {
+    ul {
+        max-width: 100%;
+        grid-column-gap: 2%;
+    }
+    .fullwidth {
+        padding-left: 0%;
+    }
+}
+@media only screen and (max-width: 360px) {
+    nav {
+        font-size: 1.1rem;
+    }
+}
+
+
+/* My name is header */
+
+header {
+    margin-top: 5%;
+    display: grid;
+    grid-template-rows: 1fr 2fr 2fr 1fr;
+    grid-template-columns: 1fr 4fr 1fr;
+    text-align: left;
+
+    width: 100%;
+    max-height: 60vh;
+}
+.hello {
+    grid-area: 1 / 2 / span 1 / span 1;
+    color: #f5653d;
+    font-size: 1.2rem;
+    margin: 0%;
+    align-self: end;
+}
+.my-name {
+    grid-area: 2 / 2 / span 1 / span 1;
+    color: #BBB193;
+    font-size: 6rem;
+    margin: 0%;
+    line-height: 1;
+    padding: 2% 0 5% 0;
+}
+.intro {
+    grid-area: 3 / 2 / span 1 / span 1;
+    color: #F6F0ED;
+    margin: 0%;
+}
+.intro-button {
+    grid-area: 4 / 2 / span 1 / span 1;
+    margin: 0%;
+}
+@media only screen and (max-width: 970px) {
+    .my-name {
+        font-size: 5rem;
+
+    }
+}
+@media only screen and (max-width: 810px) {
+    .my-name {
+        font-size: 4.5rem;
+        padding: 7% 0;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .my-name {
+        padding: 10% 0;
+    }
+}
+
+/* Footer */
