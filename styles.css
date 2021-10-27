@@ -100,24 +100,24 @@ header {
     justify-items: center;
 }
 .email-icon, .linkedin-icon, .github-icon {
-    color: #f5653d;
+    color: #F34616;
 }
 .cv-icon {
     color: #152a37;
-    background-color: #f5653d;
+    background-color: #F34616;
     text-decoration: none;
     border-radius: 0.3rem;
-    padding: 0.45rem;
+    padding: 0.42rem;
     font-size: 1.2rem;
     font-weight: bolder;
     margin-bottom: 0.2rem;
 }
 .cv-icon:hover {
-    background-color: #F34616;
+    background-color: #F3461695;
     transition: 0.5s;
 }   
 .email-icon:hover, .linkedin-icon:hover, .github-icon:hover {
-    color: #F34616;
+    color: #F3461695;
     transition: 0.5s;
 }
 .hello {
@@ -126,6 +126,7 @@ header {
     font-size: 1.2rem;
     margin: 0%;
     align-self: end;
+    text-shadow: 2px 2px 4px #11222c;
 }
 .my-name {
     grid-area: 2 / 2 / span 1 / span 1;
@@ -134,11 +135,13 @@ header {
     margin: 0%;
     line-height: 1;
     padding: 2% 0 5% 0;
+    text-shadow: 2px 2px 4px #11222c;
 }
 .intro {
     grid-area: 3 / 2 / span 1 / span 1;
     color: #F6F0ED;
     margin: 0%;
+    text-shadow: 2px 2px 4px #11222c;
 }
 .intro-button {
     grid-area: 4 / 2 / span 1 / span 1;
@@ -200,6 +203,7 @@ header {
     grid-area: 1 / 2 / span 1 / span 1;
     font-size: 3rem;
     border-bottom: 0.2rem #F34616 solid;
+    text-shadow: 2px 2px 4px #11222c;
 }
 .about-text {
     grid-area: 2 / 2 / span 1 / span 1;
@@ -215,6 +219,7 @@ header {
     width: auto;
     border: 0.1rem solid #f5653d;
     border-radius: 10rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 /* Portfolio */
@@ -231,6 +236,7 @@ header {
     grid-area: 1 / 2 / span 1 / span 1;
     font-size: 3rem;
     border-bottom: 0.2rem #F34616 solid;
+    text-shadow: 2px 2px 4px #11222c;
 }
 .board-game-website-text {
     grid-area: 2 / 3 / span 1 / span 1;
@@ -245,6 +251,7 @@ header {
     max-width: 100%;
     border: 0.1rem solid #f5653d;
     border-radius: 7rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .placeholder-image {
     grid-area: 3 / 2 / span 1 / span 1;
@@ -252,6 +259,7 @@ header {
     max-width: 100%;
     border: 0.1rem solid #f5653d;
     border-radius: 7rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .placeholder-text {
     grid-area: 3 / 3 / span 1 / span 1;
@@ -261,7 +269,7 @@ header {
 
 .contact-grid {
     display: grid;
-    grid-template-rows: 1fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr 4fr 1fr;
     text-align: left;
     width: 100%;
@@ -270,9 +278,20 @@ header {
     grid-area: 1 / 2 / span 1 / span 1;
     font-size: 3rem;
     border-bottom: 0.2rem #F34616 solid;
+    text-shadow: 2px 2px 4px #11222c;
 }
 .contact-text {
     grid-area: 2 / 2 / span 1 / span 1;
+}
+.contact-icons {
+    grid-area: 3 / 2 / span 1 / span 1;
+}
+.contact-icons i {
+    color: #BBB193;
+    margin-right: 4%;
+}
+.contact-icons i:hover {
+    color: #F6F0ED;
 }
 
 /* Footer */
