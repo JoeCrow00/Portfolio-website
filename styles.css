@@ -228,9 +228,28 @@ header {
     grid-area: 2 / 3 / span 1 / span 1;
     height: auto;
     max-width: 70%;
+    min-width: 150px;
     border: 0.1rem solid #f5653d;
     border-radius: 10rem;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+@media only screen and (max-width: 600px) {
+    .about-grid {
+        grid-template-columns: 0.3fr 4fr 0.7fr;
+    }
+    .about-img {
+        display: none;
+    }
+}
+@media only screen and (max-width: 980px) {
+    .about-grid img {
+        max-width: 90%;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .about-grid img {
+        max-width: 100%;
+    }
 }
 
 /* Portfolio */
@@ -264,6 +283,7 @@ header {
     grid-area: 2 / 2 / span 1 / span 1;
     height: auto;
     max-width: 100%;
+    min-width: 300px;
     border: 0.1rem solid #f5653d;
     border-radius: 7rem;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -272,6 +292,7 @@ header {
     grid-area: 3 / 2 / span 1 / span 1;
     height: auto;
     max-width: 100%;
+    min-width: 300px;
     border: 0.1rem solid #f5653d;
     border-radius: 7rem;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
