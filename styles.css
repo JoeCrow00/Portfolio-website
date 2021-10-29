@@ -228,22 +228,18 @@ header {
     grid-area: 2 / 3 / span 1 / span 1;
     height: auto;
     max-width: 70%;
-    min-width: 150px;
     border: 0.1rem solid #f5653d;
     border-radius: 10rem;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-@media only screen and (max-width: 600px) {
-    .about-grid {
-        grid-template-columns: 0.3fr 4fr 0.7fr;
-    }
-    .about-img {
-        display: none;
+@media only screen and (max-width: 1200px) {
+    .about-grid img {
+        max-width: 80%;
     }
 }
-@media only screen and (max-width: 980px) {
+@media only screen and (max-width: 1000px) {
     .about-grid img {
-        max-width: 90%;
+        max-width: 80%;
     }
 }
 @media only screen and (max-width: 800px) {
@@ -305,7 +301,7 @@ header {
 
 .contact-grid {
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr 0.5fr;
     grid-template-columns: 1fr 4fr 1fr;
     text-align: left;
     width: 100%;
@@ -321,6 +317,7 @@ header {
 }
 .contact-icons {
     grid-area: 3 / 2 / span 1 / span 1;
+    margin-bottom: 15%;
 }
 .contact-icons i {
     color: #BBB193;
@@ -347,4 +344,63 @@ footer {
     grid-area: 1 / 3 / span 1 / span 1;
     text-decoration: none;
     font-weight: bold;
+}
+
+
+
+@media only screen and (max-width: 1000px) {
+    header {
+        grid-template-columns: 0.5fr 4fr 1fr;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .about-grid {
+        grid-template-columns: 0.2fr 2fr 2fr 0.2fr;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .portfolio-grid {
+        grid-template-columns: 0.2fr 2.7fr 1.3fr 0.2fr;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .contact-grid {
+        grid-template-columns: 0.2fr 4fr 0.2fr;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .about-grid {
+        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
+        padding-left: 5%;
+        margin-right: 3%;
+    }
+    .about-grid img {
+        max-width: 70%;
+        margin-bottom: 5%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
+        padding-left: 5%;
+        margin-right: 3%;
+    }
+    .board-game-website-img, .placeholder-image {
+        max-width: 95%;
+    }
+    .board-game-website-text, .placeholder-text {
+        margin-bottom: 8%;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    header {
+        margin-bottom: 28%;
+    }
 }
